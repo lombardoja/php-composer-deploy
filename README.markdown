@@ -1,4 +1,4 @@
-# Joseph Lombardo's PHP Composer Deploy
+# PHP Composer Deploy
 
 If you want to use Capistrano to deploy php apps using Composer, this is it.
 
