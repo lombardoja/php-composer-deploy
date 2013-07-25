@@ -5,7 +5,7 @@
 
 Gem::Specification.new do |s|
   s.name = "php-composer-deploy"
-  s.version = "0.0.1"
+  s.version = "0.0.2"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Joseph Lombardo"]
@@ -15,6 +15,15 @@ Gem::Specification.new do |s|
   s.extra_rdoc_files = [
     "LICENSE.markdown",
     "README.markdown"
+  ]
+  s.files = [
+    "CHANGELOG.markdown",
+    "LICENSE.markdown",
+    "README.markdown",
+    "Rakefile",
+    "VERSION",
+    "lib/php-composer-deploy.rb",
+    "php-composer-deploy.gemspec"
   ]
   s.homepage = "http://github.com/lombardoja/php-composer-deploy/"
   s.require_paths = ["lib"]
