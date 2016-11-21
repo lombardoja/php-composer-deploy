@@ -449,11 +449,18 @@ Capistrano::Configuration.instance(:must_exist).load do
     desc "Copy vendors from previous release"
     task :copy_vendors, :except => { :no_release => true } do
       run "if [ -d #{previous_release}/vendor ]; then cp -a #{previous_release}/vendor #{latest_release}/vendor; fi"
-      end
+    end
+
     desc "Install vendors in current path"
     task :install do
       run "sh -c 'cd #{latest_release} && curl -s http://getcomposer.org/installer | php'"
       run "sh -c 'cd #{release_path} && ./composer.phar install'"
+    end
+
+    desc "Install vendors in current path without dev"
+    task :install_nodev do
+      run "sh -c 'cd #{latest_release} && curl -s http://getcomposer.org/installer | php'"
+      run "sh -c 'cd #{release_path} && ./composer.phar install --no-dev'"
     end
 
   end
