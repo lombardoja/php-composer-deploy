@@ -5,12 +5,12 @@
 
 Gem::Specification.new do |s|
   s.name = "php-composer-deploy"
-  s.version = "0.0.2"
+  s.version = "0.0.3"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Joseph Lombardo"]
   s.date = "2013-07-25"
-  s.description = "Replacement for the rails deploy strategy which ships with Capistrano, allows you to deploy any platform with ease; some people have had huge success with this deploying rails projects where they needed to customise their deploy strategy beyond the code which ships with the Capistrano gem."
+  s.description = "Replacement for the rails deploy strategy which ships with Capistrano, allows you to deploy php composer projects with ease."
   s.email = "me@joseph-lombardo.com"
   s.extra_rdoc_files = [
     "LICENSE.markdown",
